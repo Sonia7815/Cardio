@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease System</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            padding: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 90px;
+        }
+        
+        /* Section 1 */
+        .sec1{
+            margin-top: 150px;
+        }
+        .heading{
+            color: red;
+        }
+        .title{
+            color: white;
+        }
+        .desc{
+            color: white;
+        }
+        .alpha{
+            color: white;
+        }
+        .btn{
+            padding: 10px;
+            border: none;
+            background-color: red;
+            color: white;
+            border-radius: 5px;
+            font-size: large;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .btn:hover{
+            background-color: white;
+            color: red;
+        }
+
+        /* Section 2 */
+        .sec2{
+
+        }
+
+
+        /* Media Querrry for screen less than 900px */
+        @media screen and (max-width: 900px) {
+        body{
+        padding: 10px;
+        box-sizing: border-box;
+            width: 95vw;
+        }
+        main{
+            flex-direction: column-reverse;
+            margin-top: 0px;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <main>
+        <div class="sec1">
+            <h1 class="heading">Welcome to <span class="title">CardioGuard Pro</span></h1>
+            <h3 class="desc">Your Trusted Heart Health Companion</h3><br>
+            <h4 class="alpha">Developed and Managed by AlphaNext</h4><br><br>
+            <a href="model.html"><button class="btn">Start Now</button></a>
+            <a href="learnmore.html"><button class="btn">Learn More</button></a>
+        </div>
+
+        
+        <div class="sec2">
+            <img src="heartrbg.png" alt="Heart" class="image">
+        </div>
+
+    </main>
+    <footer></footer>
+</body>
+</html>

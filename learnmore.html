@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease System</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-color: black;
+            padding: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        
+        /* Section 1 */
+        .sec1{
+            width: 50%;
+
+        }
+        .heading{
+            color: red;
+        }
+        .title{
+            color: white;
+        }
+        .desc{
+            color: white;
+        }
+        .alpha{
+            color: white;
+        }
+        li{
+            margin-left: 18px;
+        }
+        .btn{
+            padding: 10px;
+            border: none;
+            background-color: red;
+            color: white;
+            border-radius: 5px;
+            font-size: large;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .btn:hover{
+            background-color: white;
+            color: red;
+        }
+
+        /* Section 2 */
+        .sec2{
+
+        }
+
+
+        /* Media Querrry for screen less than 900px */
+        @media screen and (max-width: 900px) {
+        body{
+        padding: 10px;
+    
+        }
+        main{
+            flex-direction: column;
+            margin-top: 0px;
+        }
+        .sec1{
+            width: 95%;
+
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="sec1">
+            <h1 class="heading">Welcome to <span class="title">CardioGuard Pro</span></h1>
+            <h3 class="desc">Your Trusted Heart Health Companion</h3><br><br><br>
+
+            <h3 class="desc">Why Choose CardioGuard Pro?</h3><br>
+            <p class="desc">At Alpha Next, we are dedicated to providing you with a reliable, user-friendly, and proactive solution for the early detection and prevention of heart disease. CardioGuard Pro stands out for:</p><br>
+            <ul>
+                <li class="desc">Advanced Predictive Analytics</li>
+                <li class="desc">Commitment to User Empowerment</li>
+                <li class="desc">Proactive Health Management</li>
+            </ul><br>
+            <p class="desc">Discover how CardioGuard Pro can be your trusted partner in maintaining a healthy heart. Join us in the journey towards a heart-healthy life!</p><br><br>
+
+            <h3 class="desc">Get Started Today</h3><br>
+            <p class="desc">Take the first step towards a healthier heart. Sign up for CardioGuard Pro and embark on a journey of proactive heart health management.</p><br><br><br><br>
+
+            
+
+        </div>
+
+        <div class="sec2">
+            <img src="heartrbg.png" alt="Heart" class="image">
+        </div>
+
+    </main>
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease System</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-color: black;
+            padding: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main{
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        /* Section 1 */
+        .sec1{
+    
+        }
+        .heading{
+            color: red;
+        }
+        .title{
+            color: white;
+        }
+        .desc{
+            color: white;
+        }
+        .alpha{
+            color: white;
+        }
+        .input{
+            padding: 5px;
+            width: 100%;
+            margin-bottom: 20px;
+            border: none;
+            background: none;
+            outline: none;
+            color: white;
+            border-bottom: 1px solid white;
+        }
+        select{
+
+        }
+        select:focus {
+            outline: none; /* Remove the default focus outline (optional) */
+
+        }
+        select option{
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+        .btn{
+            padding: 10px;
+            border: none;
+            background-color: red;
+            color: white;
+            border-radius: 5px;
+            font-size: large;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .btn:hover{
+            background-color: white;
+            color: red;
+        }
+
+        /* Section 2 */
+        .sec2{
+
+        }
+        p{
+            color: white;
+        }
+
+        /* Media Querrry for screen less than 900px */
+        @media screen and (max-width: 900px) {
+        body{
+        padding: 10px;
+        }
+        main{
+            flex-direction: column;
+            margin-top: 0px;
+        }
+
+        .input{
+            width: 75%;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="sec1">
+            <h1 class="heading">Welcome to <span class="title">CardioGuard Pro</span></h1>
+            <h3 class="desc">Your Trusted Heart Health Companion</h3><br><br>
+
+            <form action="model" method="POST">
+                <input type="text" class="input" placeholder="Enter Name" id="name" name="name"><br>
+                <input type="text" class="input" placeholder="Enter Age" min="0" id="name" name="age"><br>
+                <select name="gender" id="gender" class="input">
+                    <option value="male|1">Male</option>
+                    <option value="female|0">Female</option>
+                </select>
+                <select name="chestpain" id="Chest_Pain" class="input">
+                    
+                    <option value="Typical Angina|1">Typical Angina</option>
+                    <option value="Atypical Angina|2">Atypical Angina</option>
+                    <option value="Non-Anginal Pain|3">Non-Anginal Pain</option>
+                    <option value="Asymptomatic|4">Asymptomatic</option>
+                </select>
+                <input type="number" class="input" placeholder="Enter Blood Pressure" min="0" id="bp" name="bp"><br>
+                <input type="number" class="input" placeholder="Enter Cholosterol Level" min="0" id="bp" name="cl"><br>
+                <select name="fbs" id="gender" class="input">
+                    <option value="" disabled selected>FBS Over 120</option>
+                    <option value="Yes|1">Yes</option>
+                    <option value="No|0">No</option>
+                </select>
+                
+                <select name="ekg" id="ekg" class="input">
+                    <option value="" disabled selected>Select Resting Electrocardiographic Results</option>
+                    <option value="Normal|0">Normal</option>
+                    <option value="Having ST-T wave abnormality|1">Having ST-T wave abnormality</option>
+                    <option value="Showing probable or definite left ventricular hypertrophy by Estes' criteria|2">Showing probable or definite left ventricular hypertrophy by Estes' criteria</option>
+                </select>
+                <input type="number" class="input" placeholder="Enter Max HR" min="0" id="bp" name="hr"><br>
+                <select name="exercise_angina" id="Exercise_Angina" class="input">
+                    <option value="" disabled selected>Select Exercise Angina</option>
+                    <option value="Yes|1">Yes</option>
+                    <option value="No|0">No</option>
+                </select>
+                <input type="number" class="input" step="0.01" placeholder="Enter ST Depression" min="0" id="bp" name="st_depression"><br>
+                <select name="slope_st" id="Slope_of_ST" class="input">
+                    <option value="" disabled selected>Select Slope of ST</option>
+                    <option value="upsloping|1">Upsloping</option>
+                    <option value="flat|2">Flat</option>
+                    <option value="downsloping|3">Downsloping</option>
+                </select>
+                <select name="vessels_fluro" id="Vessels_fluro" class="input">
+                    <option value="" disabled selected>Select Number of Vessels fluro</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <input type="number" class="input" placeholder="Enter Thallium" min="0" id="bp" name="thallium"><br>
+
+                <input type="submit" class="btn">
+            </form><br>
+
+            
+        </div>
+        <div class="sec2">
+            <img src="heartrbg.png" alt="Heart" class="image">
+        </div>
+
+
+    </main>
+    <footer></footer>
+    <script>
+        document.getElementById("predictionForm").addEventListener("submit", function() {
+            // Assuming you are using vanilla JavaScript, you can add logic here to handle form submission
+            // For example, you can display the result section after form submission
+            document.querySelector(".result-section").style.display = "block";
+        });
+    </script>
+</body>
+</html>
